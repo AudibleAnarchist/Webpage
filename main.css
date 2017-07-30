@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+}
+.sidebar {
+  font-size: 1.35rem;
+  width: 20%;
+  height: 100vh;
+  background-color: pink;
+  float: left;
+  position: fixed;
+}
+.sidebar * {
+  margin: 0;
+}
+.title {
+  text-align: left;
+  font-size: 5rem;
+  line-height: 5rem;
+  margin: 0 0 0 0;
+  padding-top: 1rem;
+  padding-left: 6rem;}
+.underline{
+  border-bottom: solid 5px red;
+}
+iframe {
+  margin: 1.5rem 0 0 0;
+}
+.main {
+  margin-left: 20%;
+  float: left;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.container {
+  box-sizing: border-box;
+  align-self: flex-start;
+  width: 50%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+quote {
+  text-align: center;
+}
+.about {
+  font-size: 2em;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.pll {
+  padding-left: 1.5rem;
+}
+.plr {
+
+}
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}
