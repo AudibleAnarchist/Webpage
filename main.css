@@ -5,10 +5,11 @@ body {
 .sidebar {
   font-size: 1.35rem;
   width: 20%;
-  height: 100vh;
+  height: 110vh;
   background-color: pink;
   float: left;
   position: fixed;
+  overflow-y: scroll;
 }
 
 .sidebar * {
@@ -21,7 +22,7 @@ body {
   line-height: 5rem;
   margin: 0 0 0 0;
   padding-top: 1rem;
-  padding-left: 6rem;
+  padding-left: 2rem;
 }
 
 .underline{
@@ -47,7 +48,7 @@ iframe {
   box-sizing: border-box;
   align-self: flex-start;
   width: 50%;
-  margin-top: 1rem;
+  //margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -59,6 +60,11 @@ quote {
   font-size: 2em;
   padding-left: 3rem;
   padding-right: 3rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  word-break: break-word;
+  hyphens: auto;
 }
 
 .pl > h3{
@@ -102,7 +108,12 @@ quote {
   border-radius: .25em;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 550px) {
+  html {
+    widows: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   .container {
     width: 100%;
     margin: 0;
@@ -119,10 +130,18 @@ quote {
   .about {
     margin: 0;
     padding: 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   iframe {
-    margin: 0;
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 799px){
+  .title {
+    font-size: 4rem;
+  }
+  iframe {
     width: 100%;
   }
 }
@@ -135,9 +154,8 @@ quote {
     width: 100%;
     margin-left: 0;
   }
-  .title {
-    padding-left: 2rem;
-    font-size: 5rem;
-    margin: 0;
+  .about {
+    width: 100%;
   }
+
 }
