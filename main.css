@@ -137,9 +137,26 @@ quote {
   }
 }
 
+@media screen and (max-width: 700px) and (max-height: 360px) {
+
+  .tt {
+    width: 100%;
+  }
+
+  .tr {
+    width: 100%;
+  }
+
+  iframe {
+    width: 400px !important;
+    margin-left: 15%;
+  }
+
+}
+
 @media screen and (min-width: 551px) and (max-width: 799px){
   .title {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   iframe {
     width: 100%;
