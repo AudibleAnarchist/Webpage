@@ -137,18 +137,9 @@ quote {
   }
 }
 
-@media screen and (max-width: 600px) and (orientation : landscape) {
-.title {
-  font-size: 3rem;
-}
-iframe {
-  width: 240px;
-}
-}
-
 @media screen and (min-width: 551px) and (max-width: 799px){
   .title {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   iframe {
     width: 100%;
