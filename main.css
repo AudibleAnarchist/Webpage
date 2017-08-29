@@ -6,7 +6,7 @@ body {
   font-size: 1.35rem;
   width: 20%;
   height: 110vh;
-  background-color: pink;
+  //background-color: pink;
   float: left;
   position: fixed;
 
@@ -38,15 +38,23 @@ iframe {
 .main {
   margin-left: 20%;
   float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 80%;
 }
 
 .container {
-  box-sizing: border-box;
-  align-self: flex-start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   width: 50%;
   //margin-top: 1rem;
   margin-bottom: 1rem;
@@ -64,7 +72,9 @@ quote {
   word-wrap: break-word;
   word-break: break-all;
   word-break: break-word;
-  hyphens: auto;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 .pl > h3{
@@ -80,6 +90,8 @@ quote {
   opacity: 0;
   max-height: 0;
   font-size: 0;
+  -webkit-transition: .25s ease;
+  -o-transition: .25s ease;
   transition: .25s ease;
 }
 
